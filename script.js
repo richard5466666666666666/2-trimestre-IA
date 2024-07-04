@@ -9,12 +9,12 @@ const perguntas = [
         enunciado: "O protagonista de 'Red Dead Redemption 2' é Arthur Morgan?",
         alternativas: [
             {
-                texto: Sim, o protagonista de 'Red Dead Redemption 2' é Arthur Morgan.",
-                afirmacao: "Verdadeira: "
+                texto: "Sim, o protagonista de 'Red Dead Redemption 2' é Arthur Morgan.",
+                afirmacao: "Verdadeira"
             },
             {
-                texto: "Não, o protagonista de 'Red Dead Redemption 2' é John Marston.",
-                afirmacao: "Falsa:"
+                texto: "Falsa: Não, o protagonista de 'Red Dead Redemption 2' é John Marston.",
+                afirmacao: "negação"
             }
         ]
     },
@@ -22,12 +22,12 @@ const perguntas = [
         enunciado: "'Red Dead Redemption 2' se passa no Velho Oeste americano?",
         alternativas: [
             {
-                texto: "Sim, 'Red Dead Redemption 2' se passa no Velho Oeste americano.",
-                afirmacao: "Verdadeira: "
+                texto: "Verdadeira: Sim, 'Red Dead Redemption 2' se passa no Velho Oeste americano.",
+                afirmacao: "afirmação"
             },
             {
-                texto: " Não, 'Red Dead Redemption 2' se passa na Europa durante a Idade Média.",
-                afirmacao: "Falsa: "
+                texto: "Falsa: Não, 'Red Dead Redemption 2' se passa na Europa durante a Idade Média.",
+                afirmacao: "negação"
             }
         ]
     },
@@ -35,12 +35,12 @@ const perguntas = [
         enunciado: "O jogo 'Red Dead Redemption 2' foi desenvolvido pela Rockstar Games?",
         alternativas: [
             {
-                texto: "Sim, 'Red Dead Redemption 2' foi desenvolvido pela Rockstar Games.",
-                afirmacao: "Verdadeira:"
+                texto: "Verdadeira: Sim, 'Red Dead Redemption 2' foi desenvolvido pela Rockstar Games.",
+                afirmacao: "afirmação"
             },
             {
-                texto: "Não, 'Red Dead Redemption 2' foi desenvolvido pela Ubisoft.",
-                afirmacao: "Falsa: "
+                texto: "Falsa: Não, 'Red Dead Redemption 2' foi desenvolvido pela Ubisoft.",
+                afirmacao: "negação"
             }
         ]
     },
@@ -48,12 +48,12 @@ const perguntas = [
         enunciado: "Em 'Red Dead Redemption 2', os jogadores podem caçar animais selvagens?",
         alternativas: [
             {
-                texto: Sim, em 'Red Dead Redemption 2', os jogadores podem caçar animais selvagens.",
-                afirmacao: "Verdadeira:"
+                texto: "Verdadeira: Sim, em 'Red Dead Redemption 2', os jogadores podem caçar animais selvagens.",
+                afirmacao: "afirmação"
             },
             {
-                texto: "Não, em 'Red Dead Redemption 2', os jogadores não podem caçar animais selvagens.",
-                afirmacao: "Falsa: "
+                texto: "Falsa: Não, em 'Red Dead Redemption 2', os jogadores não podem caçar animais selvagens.",
+                afirmacao: "negação"
             }
         ]
     },
@@ -61,12 +61,12 @@ const perguntas = [
         enunciado: "'Red Dead Redemption 2' oferece um modo multiplayer chamado 'Red Dead Online'?",
         alternativas: [
             {
-                texto: Sim, 'Red Dead Redemption 2' oferece um modo multiplayer chamado 'Red Dead Online'.",
-                afirmacao: "Verdadeira:"
+                texto: "Verdadeira: Sim, 'Red Dead Redemption 2' oferece um modo multiplayer chamado 'Red Dead Online'.",
+                afirmacao: "afirmação"
             },
             {
-                texto: " Não, 'Red Dead Redemption 2' não oferece um modo multiplayer chamado 'Red Dead Online'.",
-                afirmacao: "Falsa: "
+                texto: "Falsa: Não, 'Red Dead Redemption 2' não oferece um modo multiplayer chamado 'Red Dead Online'.",
+                afirmacao: "negação"
             }
         ]
     }
