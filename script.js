@@ -6,72 +6,71 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "O protagonista de 'Red Dead Redemption 2' é Arthur Morgan?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
+                texto: "Verdadeira: Sim, o protagonista de 'Red Dead Redemption 2' é Arthur Morgan.",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "afirmação"
+                texto: "Falsa: Não, o protagonista de 'Red Dead Redemption 2' é John Marston.",
+                afirmacao: "negação"
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "'Red Dead Redemption 2' se passa no Velho Oeste americano?",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
+                texto: "Verdadeira: Sim, 'Red Dead Redemption 2' se passa no Velho Oeste americano.",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "afirmação"
+                texto: "Falsa: Não, 'Red Dead Redemption 2' se passa na Europa durante a Idade Média.",
+                afirmacao: "negação"
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "O jogo 'Red Dead Redemption 2' foi desenvolvido pela Rockstar Games?",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
+                texto: "Verdadeira: Sim, 'Red Dead Redemption 2' foi desenvolvido pela Rockstar Games.",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "afirmação"
+                texto: "Falsa: Não, 'Red Dead Redemption 2' foi desenvolvido pela Ubisoft.",
+                afirmacao: "negação"
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Em 'Red Dead Redemption 2', os jogadores podem caçar animais selvagens?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
+                texto: "Verdadeira: Sim, em 'Red Dead Redemption 2', os jogadores podem caçar animais selvagens.",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "afirmação"
+                texto: "Falsa: Não, em 'Red Dead Redemption 2', os jogadores não podem caçar animais selvagens.",
+                afirmacao: "negação"
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "'Red Dead Redemption 2' oferece um modo multiplayer chamado 'Red Dead Online'?",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
+                texto: "Verdadeira: Sim, 'Red Dead Redemption 2' oferece um modo multiplayer chamado 'Red Dead Online'.",
                 afirmacao: "afirmação"
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "afirmação"
+                texto: "Falsa: Não, 'Red Dead Redemption 2' não oferece um modo multiplayer chamado 'Red Dead Online'.",
+                afirmacao: "negação"
             }
         ]
-    },
+    }
 ];
-
 
 let atual = 0;
 let perguntaAtual;
@@ -98,14 +97,14 @@ function mostraAlternativas(){
 }
 
 function respostaSelecionada(opcaoSelecionada) {
-    const afirmacoes = opcaoSelecionada.afirmacao;
-    historiaFinal += afirmacoes + " ";
+    const afirmacao = opcaoSelecionada.afirmacao;
+    historiaFinal += afirmacao + " ";
     atual++;
     mostraPergunta();
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Quiz sobre 'Red Dead Redemption 2' concluído:";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
