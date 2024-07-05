@@ -10,6 +10,9 @@
 body {
     background-color: var(--cor-fundo);
     background-image:url('fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: var(--cor-texto);
     display: flex;
     justify-content: center;
