@@ -9,7 +9,7 @@
 
 body {
     background-color: var(--cor-fundo);
-    background-image:url('fundo.png');
+    background-image:url('fundo.jpg');
     color: var(--cor-texto);
     display: flex;
     justify-content: center;
